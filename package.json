@@ -1,0 +1,51 @@
+{
+  "name": "s-ais",
+  "version": "0.0.0",
+  "description": "DeLorme inReach/Explorer self-reporting service",
+  "license": "MIT",
+  "repository": "infinitedescent/s-ais",
+  "author": {
+    "name": "Hays Clark",
+    "email": "hays.clark@gmail.com",
+    "url": "infinitedescent.com"
+  },
+  "bin": "lib/cli.js",
+  "main": "lib/index.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && nyc ava"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/cli.js"
+  ],
+  "keywords": [
+    "marinetraffic",
+    "marine traffic",
+    "delorme",
+    "inreach",
+    "explorer",
+    "garmin",
+    "ais",
+    "cli-app",
+    "cli",
+    "heroku"
+  ],
+  "dependencies": {
+    "meow": "3.7.0"
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "coveralls": "^2.11.12",
+    "nyc": "^10.0.0",
+    "xo": "^0.17.0"
+  },
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "text"
+    ]
+  }
+}
