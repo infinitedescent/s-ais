@@ -1,6 +1,6 @@
 {
   "name": "s-ais",
-  "description": "DeLorme inReach/Explorer self-reporting service",
+  "description": "Server-AIS self-reporting service for DeLorme inReach/Explorer devices",
   "keywords": [
 	"marinetraffic",
 	"marine traffic",
