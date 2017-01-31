@@ -15,7 +15,7 @@
     "node": ">=4"
   },
   "scripts": {
-    "cli": "node lib/cli.js",
+    "cli": "cross-env MAPSHARE_ID=identifie DEVICE_IMEI=012345678901234 REPORT_MMSI=0123456789 REPORT_SENDER=john.smith@domain.com node lib/cli.js",
     "test": "xo && nyc ava"
   },
   "files": [
@@ -35,23 +35,22 @@
     "heroku"
   ],
   "dependencies": {
-    "meow": "3.7.0",
+    "meow": "^3.7.0",
     "cheerio": "0.22.0",
     "libxmljs": "0.18.4",
-    "meow": "^3.7.0",
     "moment": "2.17.1",
     "pg": "6.1.2",
     "pg-promise": "5.5.2",
     "request-promise-native": "1.0.3",
     "sendgrid": "4.7.1"
-    },
-    "devDependencies": {
-      "ava": "^0.17.0",
-      "coveralls": "^2.11.12",
-      "cross-env": "3.1.4",
-      "nyc": "^10.0.0",
-      "xo": "^0.17.0"
-    },
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "coveralls": "^2.11.12",
+    "cross-env": "3.1.4",
+    "nyc": "^10.0.0",
+    "xo": "^0.17.0"
+  },
   "nyc": {
     "reporter": [
       "lcov",

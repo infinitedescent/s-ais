@@ -26,13 +26,8 @@
 	"REPORT_MMSI": {
 	  "description": "The MMSI number of the vessel to be used in the self-report"
 	},
-	"REPORT_FROM": {
-	  "description": "The FROM email address (sender) of the self-reports."
-	},
-	"REPORT_TITLE": {
-	  "description": "The email TITLE to be used in the seld-reports.",
-	  "value": "DeLorme > Marine Traffic Sync",
-	  "required": "false"
+	"REPORT_SENDER": {
+	  "description": "The e-mail address of the individual who is SENDING the self-reports.\nUse a real address or MarineTraffic might mark your self-reports as spam."
 	}
   },
   "image": "heroku/nodejs",
