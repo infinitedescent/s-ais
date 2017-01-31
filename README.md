@@ -1,5 +1,5 @@
-s-ais
-=====
+sAIS
+====
 [![Build Status](https://travis-ci.org/infinitedescent/s-ais.svg?branch=develop)](https://travis-ci.org/infinitedescent/s-ais) [![Coverage Status](https://coveralls.io/repos/github/infinitedescent/s-ais/badge.svg?branch=develop)](https://coveralls.io/github/infinitedescent/s-ais?branch=develop) [![Known Vulnerabilities](https://snyk.io/test/github/infinitedescent/s-ais/badge.svg)](https://snyk.io/test/github/infinitedescent/s-ais)
 
 > Server-AIS self-reporting service for DeLorme inReach/Explorer devices
