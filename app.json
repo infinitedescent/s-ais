@@ -15,19 +15,19 @@
   ],
   "website": "https://www.infinitedescent.com/",
   "repository": "https://github.com/infinitedescent/s-ais",
-  "logo": "https://www.infinitedescent.com/logo.svg",
+  "logo": "https://cdn.rawgit.com/infinitedescent/s-ais/develop/docs/s-ais.svg",
   "env": {
 	"MAPSHARE_ID": {
-	  "description": "The MapShare ID, found in 'Social' tab at explore.delorme.com."
+	  "description": "The MapShare ID, found at explore.delorme.com in the 'Social' section."
 	},
 	"DEVICE_IMEI": {
-	  "description": "The IMEI of the tracking device to use."
+	  "description": "The IMEI of the device which will track your location."
 	},
 	"REPORT_MMSI": {
-	  "description": "The MMSI number to be used in the self-report"
+	  "description": "The MMSI number of the vessel to be used in the self-report"
 	},
 	"REPORT_FROM": {
-	  "description": "The FROM email address to be used in the self-reports."
+	  "description": "The FROM email address (sender) of the self-reports."
 	},
 	"REPORT_TITLE": {
 	  "description": "The email TITLE to be used in the seld-reports.",
