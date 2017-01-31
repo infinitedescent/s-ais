@@ -9,6 +9,8 @@ Install
 
     $ git clone git@github.com:infinitedescent/s-ais.git
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/infinitedescent/s-ais/tree/develop)
+
 Usage
 -----
 
