@@ -1,0 +1,76 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='Hays Clark')
+    link(rel='shortcut icon', href='/ico/favicon.ico')
+    title #{title} - sAIS
+    // Bootstrap core CSS
+    link(href='/css/bootstrap.css', rel='stylesheet')
+    // Custom styles for this template
+    link(href='/css/style.css', rel='stylesheet')
+    link(href='/css/font-awesome.min.css', rel='stylesheet')
+    // Just for debugging purposes. Don't actually copy this line!
+    //if lt IE 9
+      script(src='../../js/ie8-responsive-file-warning.js')
+    // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+    script(src='/js/modernizr.js')
+  body
+    // Fixed navbar
+    .navbar.navbar-default.navbar-fixed-top(role='navigation')
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='/') sAIS
+        .navbar-collapse.collapse.navbar-right
+          block navbar
+        // /.nav-collapse
+    block content
+    //
+      *****************************************************************************************************************
+      FOOTER
+      *****************************************************************************************************************
+    #footerwrap
+      .container
+        .row
+          .col-lg-4
+            h4 About S-AIS
+            .hline-w
+            p
+              a(href='https://github.com/infinitedescent/s-ais') S-AIS
+              |  is a self-reporting service for DeLorme inReach/Explorer devices created by 
+              em Infinite Descent, LLC
+          .col-lg-4
+            h4 Social Links
+            .hline-w
+            p
+              a(href='https://www.facebook.com/infinitedescent/')
+                i.fa.fa-facebook
+          .col-lg-4
+            h4 Whereabouts
+            .hline-w
+            p
+              | 		 				Seattle, WA.
+    //
+      Bootstrap core JavaScript
+      ==================================================
+    // Placed at the end of the document so the pages load faster
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+    script(src='/js/bootstrap.min.js')
+    script(src='/js/retina-1.1.0.js')
+    script(src='/js/jquery.hoverdir.js')
+    script(src='/js/jquery.hoverex.min.js')
+    script(src='/js/jquery.prettyPhoto.js')
+    script(src='/js/jquery.isotope.min.js')
+    script(src='/js/custom.js')
+    block scripts

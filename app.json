@@ -1,6 +1,6 @@
 {
   "name": "sAIS",
-  "description": "Server-AIS self-reporting service for DeLorme inReach/Explorer devices",
+  "description": "Server-AIS self-reporting service for Garmin DeLorme devices",
   "keywords": [
 	"marinetraffic",
 	"marine traffic",
@@ -15,7 +15,11 @@
   ],
   "website": "https://www.infinitedescent.com/",
   "repository": "https://github.com/infinitedescent/s-ais",
-  "logo": "https://cdn.rawgit.com/infinitedescent/s-ais/develop/docs/s-ais.svg",
+  "logo": "https://cdn.rawgit.com/infinitedescent/s-ais/develop/public/images/s-ais.svg",
+  "success_url": "/welcome",
+  "scripts":{
+	"postdeploy":"bin/db-setup"
+  },
   "env": {
 	"MAPSHARE_ID": {
 	  "description": "The MapShare ID, found at explore.delorme.com in the 'Social' section."
@@ -39,10 +43,17 @@
 	  }
 	},
 	{
-	  "plan": "scheduler"
-	},
-	{
 	  "plan": "sendgrid"
 	}
-  ]
+  ],
+  "formation": {
+	"web": {
+	  "quantity": 1,
+	  "size": "free"
+	},
+	"worker": {
+	  "quantity": 1,
+	  "size": "free"
+	}
+  }
 }

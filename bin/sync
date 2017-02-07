@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+'use strict';
+
+// script must be manually schedule to run every 10 minutes
+const pgp = require('pg-promise')();
+const dbConfig = require('./../lib/db/cache-config');
+const ServerAIS = require('./../lib/s-ais');
+
+/**
+ * sAIS synchronize runner
+ */
+const db = pgp(dbConfig());
+new ServerAIS(db)
+	.synchronize()
+	.catch(err => {
+		console.error(err.message);
+	});

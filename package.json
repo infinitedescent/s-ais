@@ -6,23 +6,17 @@
   "repository": "infinitedescent/s-ais",
   "author": {
     "name": "Hays Clark",
-    "email": "hays.clark@gmail.com",
+    "email": "hays@infinitedescent.com",
     "url": "infinitedescent.com"
   },
-  "bin": "lib/cli.js",
-  "main": "lib/index.js",
+  "bin": "bin/sais",
   "engines": {
-    "node": ">=4"
+    "node": ">=6"
   },
   "scripts": {
-    "cli": "cross-env MAPSHARE_ID=identifie DEVICE_IMEI=012345678901234 REPORT_MMSI=0123456789 REPORT_SENDER=john.smith@domain.com node lib/cli.js",
-    "sync": "node lib/cli.js",
+    "start": "node server.js",
     "test": "xo && nyc ava"
   },
-  "files": [
-    "lib/index.js",
-    "lib/cli.js"
-  ],
   "keywords": [
     "marinetraffic",
     "marine traffic",
@@ -36,21 +30,29 @@
     "heroku"
   ],
   "dependencies": {
+    "body-parser": "1.16.0",
     "cheerio": "0.22.0",
-    "meow": "^3.7.0",
+    "express": "4.14.1",
+    "jade": "1.11.0",
+    "meow": "3.7.0",
+    "method-override": "2.3.7",
     "moment": "2.17.1",
+    "nib": "1.1.2",
     "pg-promise": "5.5.2",
-    "rebuild": "0.1.2",
+    "request": "2.79.0",
     "request-promise-native": "1.0.3",
     "sendgrid": "4.7.1",
+    "stylus": "0.54.5",
     "xml2js": "0.4.17"
   },
   "devDependencies": {
-    "ava": "^0.17.0",
-    "coveralls": "^2.11.12",
-    "cross-env": "3.1.4",
-    "nyc": "^10.0.0",
-    "xo": "^0.17.0"
+    "ava": "0.17.0",
+    "coveralls": "2.11.12",
+    "nyc": "10.0.0",
+    "xo": "0.17.0"
+  },
+  "xo": {
+    "ignore": "public/js/*.js"
   },
   "nyc": {
     "reporter": [
