@@ -1,0 +1,62 @@
+{
+  "name": "sAIS",
+  "version": "0.0.1",
+  "description": "Server-AIS self-reporting service for DeLorme inReach/Explorer devices",
+  "license": "MIT",
+  "repository": "infinitedescent/s-ais",
+  "author": {
+    "name": "Hays Clark",
+    "email": "hays@infinitedescent.com",
+    "url": "infinitedescent.com"
+  },
+  "bin": "bin/sais",
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "xo && nyc ava"
+  },
+  "keywords": [
+    "marinetraffic",
+    "marine traffic",
+    "delorme",
+    "inreach",
+    "explorer",
+    "garmin",
+    "ais",
+    "cli-app",
+    "cli",
+    "heroku"
+  ],
+  "dependencies": {
+    "body-parser": "1.17.2",
+    "cheerio": "0.22.0",
+    "express": "4.15.3",
+    "method-override": "2.3.9",
+    "moment": "2.17.1",
+    "nib": "1.1.2",
+    "pg-promise": "5.5.2",
+    "pug": "2.0.0-rc.2",
+    "request": "2.79.0",
+    "request-promise-native": "1.0.3",
+    "sendgrid": "4.7.1",
+    "stylus": "0.54.5",
+    "xml2js": "0.4.17"
+  },
+  "devDependencies": {
+    "ava": "0.17.0",
+    "coveralls": "2.11.12",
+    "nyc": "10.0.0",
+    "xo": "0.17.0"
+  },
+  "xo": {
+    "ignore": "public/js/*.js"
+  },
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "text"
+    ]
+  }
+}

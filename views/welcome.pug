@@ -1,0 +1,38 @@
+extend layout
+block navbar
+  ul.nav.navbar-nav
+    li.active
+      a(href='/welcome') WELCOME
+    li
+      a(href='/') HOME
+block content
+    //
+      *****************************************************************************************************************
+      BLUE WRAP
+      *****************************************************************************************************************
+    #blue
+      .container
+        .row
+          h3 Welcome.
+        // /row
+      // /container
+    // /blue
+    //
+      *****************************************************************************************************************
+      Content
+      *****************************************************************************************************************
+    .container.mtb
+      .row
+        .col-xs-6.col-md-4
+          img.img-responsive(src='/images/s-ais.svg', alt='')
+        .col-xs-12.col-md-8
+        h3 Final steps.
+        p
+          | sAIS has now been deployed,
+          b  MAKE SURE
+          |  to follow the
+          br
+          a('https://github.com/infinitedescent/s-ais#configure-heroku-scheduler') Configure Heroku Scheduler
+          |  steps in the GitHub readme file
+          br
+          |  to complete the setup!
