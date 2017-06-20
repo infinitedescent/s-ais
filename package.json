@@ -30,11 +30,11 @@
     "heroku"
   ],
   "dependencies": {
-    "body-parser": "1.16.0",
+    "body-parser": "1.17.2",
     "cheerio": "0.22.0",
-    "express": "4.14.1",
+    "express": "4.15.3",
     "meow": "3.7.0",
-    "method-override": "2.3.7",
+    "method-override": "2.3.9",
     "moment": "2.17.1",
     "nib": "1.1.2",
     "pg-promise": "5.5.2",
