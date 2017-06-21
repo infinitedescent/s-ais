@@ -1,6 +1,6 @@
 {
   "name": "sAIS",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Server-AIS self-reporting service for DeLorme inReach/Explorer devices",
   "license": "MIT",
   "repository": "infinitedescent/s-ais",
