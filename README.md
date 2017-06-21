@@ -1,6 +1,6 @@
 sAIS
 ====
-[![Build Status](https://travis-ci.org/infinitedescent/s-ais.svg?branch=develop)](https://travis-ci.org/infinitedescent/s-ais) [![Coverage Status](https://coveralls.io/repos/github/infinitedescent/s-ais/badge.svg?branch=develop)](https://coveralls.io/github/infinitedescent/s-ais?branch=develop) [![Known Vulnerabilities](https://snyk.io/test/github/infinitedescent/s-ais/badge.svg)](https://snyk.io/test/github/infinitedescent/s-ais)
+[![Build Status](https://travis-ci.org/infinitedescent/s-ais.svg)](https://travis-ci.org/infinitedescent/s-ais) [![Coverage Status](https://coveralls.io/repos/github/infinitedescent/s-ais/badge.svg)](https://coveralls.io/github/infinitedescent/s-ais) [![Known Vulnerabilities](https://snyk.io/test/github/infinitedescent/s-ais/badge.svg)](https://snyk.io/test/github/infinitedescent/s-ais)
 
 > Server-AIS self-reporting service for DeLorme inReach/Explorer devices
 
@@ -25,7 +25,7 @@ Individuals interested in a help setting up a sAIS instance should contact Infin
 #### Deploy sAIS
 sAIS is designed to be incredibly easy to setup and run, just click on the *Deploy to Heroku* button to start the process. The link will navigate you to Heroku.com and starts the 'Create a New App' process.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/infinitedescent/s-ais/tree/develop)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/infinitedescent/s-ais/tree/master)
 
 - Fill out the critical data, in the _Config Variables_ section, make sure to read the _description_ for each value if unclear.
 - When ready, press the 'Deploy' button to finish the deployment process.
