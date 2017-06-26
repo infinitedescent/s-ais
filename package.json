@@ -1,8 +1,8 @@
 {
   "name": "sAIS",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Server-AIS self-reporting service for DeLorme inReach/Explorer devices",
-  "license": "MIT",
+  "license": "GPL",
   "repository": "infinitedescent/s-ais",
   "author": {
     "name": "Hays Clark",
@@ -40,7 +40,7 @@
     "pug": "2.0.0-rc.2",
     "request": "2.79.0",
     "request-promise-native": "1.0.3",
-    "sendgrid": "4.7.1",
+    "sendgrid": "^2.0.0",
     "stylus": "0.54.5",
     "xml2js": "0.4.17"
   },
@@ -48,6 +48,8 @@
     "ava": "0.17.0",
     "coveralls": "2.11.12",
     "nyc": "10.0.0",
+    "proxyquire": "1.8.0",
+    "sinon": "2.3.5",
     "xo": "0.17.0"
   },
   "xo": {
