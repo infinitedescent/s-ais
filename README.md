@@ -1,6 +1,6 @@
 sAIS
 ====
-[![Build Status](https://travis-ci.org/infinitedescent/s-ais.svg)](https://travis-ci.org/infinitedescent/s-ais) [![Coverage Status](https://coveralls.io/repos/github/infinitedescent/s-ais/badge.svg)](https://coveralls.io/github/infinitedescent/s-ais) [![Known Vulnerabilities](https://snyk.io/test/github/infinitedescent/s-ais/badge.svg)](https://snyk.io/test/github/infinitedescent/s-ais)
+[![Build Status](https://travis-ci.org/infinitedescent/s-ais.svg)](https://travis-ci.org/infinitedescent/s-ais) [![Coverage Status](https://coveralls.io/repos/github/infinitedescent/s-ais/badge.svg)](https://coveralls.io/github/infinitedescent/s-ais) [![Known Vulnerabilities](https://snyk.io/test/github/infinitedescent/s-ais/badge.svg)](https://snyk.io/test/github/infinitedescent/s-ais) [![Donate](https://img.shields.io/badge/Donate-PayPal-red.svg)](https://www.paypal.me/serverAIS)
 
 <img align="left" style="margin-right: 10px;" src="https://user-images.githubusercontent.com/138324/27362054-5b760816-55e0-11e7-913c-49e4d8206e50.png"/>
 
@@ -8,7 +8,7 @@ sAIS is a web service for updating the AIS position of a vessel on [MarineTraffi
 
 This software is authored as an alternative for recreational mariners to promote cruising and share their adventure without having to invest in costly satellite tracking systems intended for commercial fleets, nor costly Satellite Internet connectivity.
 
- > Please consider a [donation](https://www.paypal.me/serverAIS/10) to help ensure the maintenance and future improvements of sAIS.
+ > Please consider a [donation](https://www.paypal.me/serverAIS) to help ensure the maintenance and future improvements of sAIS.
 
 Install
 -------
