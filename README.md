@@ -17,9 +17,8 @@ Individuals interested in a help setting up a sAIS instance should contact Infin
 #### Requirements
 - A Heroku account for hosting the sAIS service. [Sign up for FREE here.](https://signup.heroku.com/)
 - the vessels **MMSI** (Maritime Mobile Service Identity) number.
-- Garmin DeLorme inReach, Explorer, or other device, have the devices **IMEI** number.
-	- A Garmin plan that includes _Unlimited tracking at 10 minute intervals_.
 	- _MapShare_ must be **On** in your inReach settings and have your **MapShare ID**
+	- A Garmin plan that includes _Unlimited tracking at 10 minute intervals_.
 - An e-mail address which will be uses as the FROM address or **SENDER** for each MarineTraffic self report.
 
 #### Deploy sAIS
