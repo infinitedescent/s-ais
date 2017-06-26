@@ -24,9 +24,6 @@
     "MAPSHARE_ID": {
       "description": "The MapShare ID, found at explore.delorme.com in the 'Social' section."
     },
-    "DEVICE_IMEI": {
-      "description": "The IMEI of the DeLorme device which will track your location."
-    },
     "REPORT_MMSI": {
       "description": "The MMSI number of the vessel to be used in the self-report."
     },
