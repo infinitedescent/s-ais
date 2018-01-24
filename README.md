@@ -5,18 +5,18 @@ sAIS
 
 <img align="left" style="margin-right: 10px;" src="https://user-images.githubusercontent.com/138324/27362054-5b760816-55e0-11e7-913c-49e4d8206e50.png"/>
 
-sAIS is a web service for updating the AIS position of a vessel on [MarineTraffic.com](https://www.marinetraffic.com/) with the Satellite tracking data from a [DeLorme device](http://info.delorme.com/) when out of range of terrestrial AIS receiving stations.  The service is configured to run every 10 minutes on a free [Heroku](https://www.heroku.com) account.  During that period, if no positional updates occurred from AIS receiving stations, the service will send a [self-report](https://www.marinetraffic.com/en/p/report-your-own-position), which gives ample time for the more frequent AIS receiving stations which typically report every minute.
+sAIS is a web service for updating the AIS position of a vessel on [MarineTraffic.com](https://www.marinetraffic.com/) with the Satellite tracking data from a [Garmin/DeLorme device](http://info.delorme.com/) when out of range of terrestrial AIS receiving stations.  The service is configured to run every 10 minutes on a free [Heroku](https://www.heroku.com) (see note below) account. During that period, if no positional updates occurred from AIS receiving stations, the service will send a [self-report](https://www.marinetraffic.com/en/p/report-your-own-position), which gives ample time for the more frequent AIS receiving stations which typically report every minute.
 
+ > :exclamation: Unfortunately, [Heroku](https://www.heroku.com/) now requires users enter a credit card to 'activate' their accounts for [Account Verfication](https://devcenter.heroku.com/articles/account-verification) purposes. While _sAIS_ is designed to run completely free on Heroku, there is NO guaranty.
+ 
 This software is authored as an alternative for recreational mariners to promote cruising and share their adventure without having to invest in costly satellite tracking systems intended for commercial fleets, nor costly Satellite Internet connectivity.
 
  > Please consider a [donation](https://www.paypal.me/serverAIS) to help ensure the maintenance and future improvements of sAIS.
 
 Install
 -------
-Individuals interested in a help setting up a sAIS instance should contact Infinite Descent for more information.
-
 #### Requirements
-- A Heroku account for hosting the sAIS service. [Sign up for FREE here.](https://signup.heroku.com/)
+- A Heroku account for hosting the sAIS service. [Sign up for FREE here.](https://signup.heroku.com/) (See note above about Heroku account verification.)
 - the vessels **MMSI** (Maritime Mobile Service Identity) number.
 - an inReach device, with _MapShare_ set to **On** in your inReach settings. You will need your **MapShare ID**
 	- It's recommended to have a Garmin plan that includes _Unlimited tracking at 10 minute intervals_.
@@ -48,7 +48,7 @@ sAIS is now completely setup!
 
 Verify setup
 ----------------
-To verify sAIS is running correctly you will need to be out of any AIS receiving stations.  Make sure your DeLorme device is 'tracking'. Open the 'Detailed View' for your vessel on marinetraffic.com, check the 'Latest Position' area, after the 'AIS Source:' you should see 'SELF' instead of an AIS station number.
+To verify sAIS is running correctly you will need to be out of any AIS receiving stations.  Make sure your Garmin/DeLorme device is 'tracking'. Open the 'Detailed View' for your vessel on marinetraffic.com, check the 'Latest Position' area, after the 'AIS Source:' you should see 'SELF' instead of an AIS station number.
 
 Disclaimer
 -----
