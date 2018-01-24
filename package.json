@@ -2,7 +2,7 @@
   "name": "sAIS",
   "version": "1.0.2",
   "description": "Server-AIS self-reporting service for DeLorme inReach/Explorer devices",
-  "license": "GPL",
+  "license": "GPL-3.0-only",
   "repository": "infinitedescent/s-ais",
   "author": {
     "name": "Hays Clark",
