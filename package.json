@@ -39,7 +39,7 @@
     "moment": "2.19.3",
     "nib": "1.1.2",
     "pg-promise": "5.9.2",
-    "pug": "2.0.0-rc.2",
+    "pug": "2.0.0",
     "request": "2.81.0",
     "request-promise-native": "1.0.3",
     "sendgrid": "^2.0.0",
