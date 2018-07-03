@@ -42,7 +42,7 @@
     "pug": "2.0.0-rc.2",
     "request": "2.81.0",
     "request-promise-native": "1.0.3",
-    "sendgrid": "^2.0.0",
+    "sendgrid": "^3.0.0",
     "stylus": "0.54.5",
     "xml2js": "0.4.17",
     "snyk": "^1.41.1"
