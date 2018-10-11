@@ -39,13 +39,13 @@
     "moment": "2.19.3",
     "nib": "1.1.2",
     "pg-promise": "5.9.2",
-    "pug": "2.0.0-rc.2",
+    "pug": "2.0.0",
     "request": "2.81.0",
     "request-promise-native": "1.0.3",
     "sendgrid": "^2.0.0",
     "stylus": "0.54.5",
     "xml2js": "0.4.17",
-    "snyk": "^1.41.1"
+    "snyk": "^1.47.0"
   },
   "devDependencies": {
     "ava": "0.17.0",
