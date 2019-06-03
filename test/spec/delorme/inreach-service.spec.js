@@ -22,7 +22,7 @@ test('getMapShareKML with mapShareId', t => {
 	instance.getMapShareKML(mapShareId);
 
 	t.true(rp.get.calledOnce);
-	t.deepEqual(rp.get.getCall(0).args[0].uri, 'https://share.delorme.com/feed/Share/' + mapShareId, 'should call expected uri');
+	t.deepEqual(rp.get.getCall(0).args[0].uri, 'https://share.garmin.com/feed/Share/' + mapShareId, 'should call expected uri');
 	t.deepEqual(rp.get.getCall(0).args[0].headers['cache-control'], 'no-cache', 'should not cache results');
 	t.falsy(rp.get.getCall(0).args[0].qs, 'should have no query string');
 	rp.get.restore();
@@ -42,7 +42,7 @@ test('getMapShareKML with mapShareId and startTime', t => {
 	instance.getMapShareKML(mapShareId, startTime);
 
 	t.true(rp.get.calledOnce);
-	t.deepEqual(rp.get.getCall(0).args[0].uri, 'https://share.delorme.com/feed/Share/' + mapShareId, 'should call expected uri');
+	t.deepEqual(rp.get.getCall(0).args[0].uri, 'https://share.garmin.com/feed/Share/' + mapShareId, 'should call expected uri');
 	t.truthy(rp.get.getCall(0).args[0].qs, 'should include query string payload');
 	t.truthy(rp.get.getCall(0).args[0].qs.d1, 'should include "ds" param in query string');
 	t.deepEqual(rp.get.getCall(0).args[0].qs.d1, startTime.toISOString(), 'should have expected start ISO time value');
@@ -65,7 +65,7 @@ test('getMapShareKML with mapShareId, startTime and endTime', t => {
 	instance.getMapShareKML(mapShareId, startTime, endTime);
 
 	t.true(rp.get.calledOnce);
-	t.deepEqual(rp.get.getCall(0).args[0].uri, 'https://share.delorme.com/feed/Share/' + mapShareId, 'should call expected uri');
+	t.deepEqual(rp.get.getCall(0).args[0].uri, 'https://share.garmin.com/feed/Share/' + mapShareId, 'should call expected uri');
 	t.truthy(rp.get.getCall(0).args[0].qs, 'should include query string payload');
 	t.truthy(rp.get.getCall(0).args[0].qs.d1, 'should include "d1" param in query string');
 	t.deepEqual(rp.get.getCall(0).args[0].qs.d1, startTime.toISOString(), 'should have expected start ISO time value');
@@ -91,7 +91,7 @@ test('getMapShareKML with mapShareId, startTime, endTime and IME', t => {
 	instance.getMapShareKML(mapShareId, startTime, endTime, imeis);
 
 	t.true(rp.get.calledOnce);
-	t.deepEqual(rp.get.getCall(0).args[0].uri, 'https://share.delorme.com/feed/Share/' + mapShareId, 'should call expected uri');
+	t.deepEqual(rp.get.getCall(0).args[0].uri, 'https://share.garmin.com/feed/Share/' + mapShareId, 'should call expected uri');
 	t.truthy(rp.get.getCall(0).args[0].qs, 'should include query string payload');
 	t.truthy(rp.get.getCall(0).args[0].qs.d1, 'should include "d1" param in query string');
 	t.deepEqual(rp.get.getCall(0).args[0].qs.d1, startTime.toISOString(), 'should have expected start ISO time value');
