@@ -5,7 +5,7 @@ sAIS
 
 <img align="left" style="margin-right: 10px;" src="https://user-images.githubusercontent.com/138324/27362054-5b760816-55e0-11e7-913c-49e4d8206e50.png"/>
 
-sAIS is a web service for updating the AIS position of a vessel on [MarineTraffic.com](https://www.marinetraffic.com/) with the Satellite tracking data from a [Garmin/DeLorme device](http://info.delorme.com/) when out of range of terrestrial AIS receiving stations.  The service is configured to run every 10 minutes on a free [Heroku](https://www.heroku.com) (see note below) account. During that period, if no positional updates occurred from AIS receiving stations, the service will send a [self-report](https://www.marinetraffic.com/en/p/report-your-own-position), which gives ample time for the more frequent AIS receiving stations which typically report every minute.
+sAIS is a web service for updating the AIS position of a vessel on [MarineTraffic.com](https://www.marinetraffic.com/) with the Satellite tracking data from a [Garmin/DeLorme inReach device](https://explore.garmin.com/en-US/inreach/) when out of range of terrestrial AIS receiving stations.  The service is configured to run every 10 minutes on a free [Heroku](https://www.heroku.com) (see note below) account. During that period, if no positional updates occurred from AIS receiving stations, the service will send a [self-report](https://www.marinetraffic.com/en/p/report-your-own-position), which gives ample time for the more frequent AIS receiving stations which typically report every minute.
 
  > :exclamation: Unfortunately, [Heroku](https://www.heroku.com/) now requires users enter a credit card to 'activate' their accounts for [Account Verfication](https://devcenter.heroku.com/articles/account-verification) purposes. While _sAIS_ is designed to run completely free on Heroku, there is NO guaranty.
  
@@ -52,7 +52,7 @@ To verify sAIS is running correctly you will need to be out of any AIS receiving
 
 Disclaimer
 -----
-Infinite Descent, creators of _sAIS_ has NO affiliation with Garmin DeLorme, MarineTraffic, nor Heroku.
+Infinite Descent, creators of _sAIS_ has NO affiliation with Garmin, DeLorme, MarineTraffic, nor Heroku.
 
 _sAIS_ is released as [Donationware](https://en.wikipedia.org/wiki/Donationware) and has **NO GUARANTY** that it will not incur Heroku charges; however, the chances of this are improbable.  The application is designed to use as little processing power as possible, and the application sleeps the majority of the time, only waking up every 10 minutes to check on your location.  However, this website does wake up your Heroku instance and uses a small amount of CPU time each time the website is accessed, so avoid navigating to the App or sharing the URL with others.  Remember, there is no reason to revisit this site other then to check if S-AIS is still functioning.
 
