@@ -1,15 +1,12 @@
 #!/usr/bin/env node
 'use strict';
 
-const pgp = require('pg-promise')();
-
 const ServerAIS = require('./../lib/s-ais');
 
 /**
  * sAIS synchronize runner, schedule to run every 10 minutes
  */
-const db = pgp(process.env.DATABASE_URL);
-new ServerAIS(db)
+new ServerAIS()
 	.synchronize()
 	.catch(error => {
 		console.error(error);

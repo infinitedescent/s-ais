@@ -1,6 +1,6 @@
 {
   "name": "sAIS",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "description": "Server-AIS self-reporting service for Garmin/DeLorme inReach/Explorer devices",
   "license": "GPL-3.0-only",
   "repository": "infinitedescent/s-ais",
@@ -40,7 +40,6 @@
     "method-override": "2.3.10",
     "moment": "2.19.3",
     "nib": "1.1.2",
-    "pg-promise": "5.9.2",
     "pug": "2.0.3",
     "request": "2.88.0",
     "request-promise-native": "1.0.3",
