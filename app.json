@@ -41,6 +41,9 @@
     },
     {
       "plan": "sendgrid"
+    },
+    {
+	  "plan": "scheduler"
     }
   ],
   "formation": {
