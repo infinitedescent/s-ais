@@ -1,0 +1,16 @@
+version: '3'
+services:
+  postgres:
+    image: postgres
+    # restart: always
+    # Add ports if you want to connect to Database directly, e.g. using a database GUI like Postico
+    ports:
+      - "5435:5432"
+    environment:
+      POSTGRES_USER: sais
+      POSTGRES_PASSWORD: sais
+    volumes:
+      - postgres-sais:/var/lib/postgresql/data
+
+volumes:
+  postgres-sais:
