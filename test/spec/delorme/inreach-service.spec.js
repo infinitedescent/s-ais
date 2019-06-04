@@ -10,7 +10,7 @@ test('constructs', t => {
 });
 
 test('getMapShareKML with mapShareId', t => {
-	let getSpy = sinon.spy(rp, 'get');
+	const getSpy = sinon.spy(rp, 'get');
 	proxyquire('../../../lib/delorme/inreach-service', {
 		'request-promise-native': {
 			get: getSpy
@@ -29,7 +29,7 @@ test('getMapShareKML with mapShareId', t => {
 });
 
 test('getMapShareKML with mapShareId and startTime', t => {
-	let getSpy = sinon.spy(rp, 'get');
+	const getSpy = sinon.spy(rp, 'get');
 	proxyquire('../../../lib/delorme/inreach-service', {
 		'request-promise-native': {
 			get: getSpy
@@ -51,7 +51,7 @@ test('getMapShareKML with mapShareId and startTime', t => {
 });
 
 test('getMapShareKML with mapShareId, startTime and endTime', t => {
-	let getSpy = sinon.spy(rp, 'get');
+	const getSpy = sinon.spy(rp, 'get');
 	proxyquire('../../../lib/delorme/inreach-service', {
 		'request-promise-native': {
 			get: getSpy
@@ -76,7 +76,7 @@ test('getMapShareKML with mapShareId, startTime and endTime', t => {
 });
 
 test('getMapShareKML with mapShareId, startTime, endTime and IME', t => {
-	let getSpy = sinon.spy(rp, 'get');
+	const getSpy = sinon.spy(rp, 'get');
 	proxyquire('../../../lib/delorme/inreach-service', {
 		'request-promise-native': {
 			get: getSpy
@@ -104,7 +104,7 @@ test('getMapShareKML with mapShareId, startTime, endTime and IME', t => {
 });
 
 test('getMapShareKML with xml result', async t => {
-	let getStub = sinon.stub(rp, 'get');
+	const getStub = sinon.stub(rp, 'get');
 	proxyquire('../../../lib/delorme/inreach-service', {
 		'request-promise-native': {
 			get: getStub
@@ -123,7 +123,7 @@ test('getMapShareKML with xml result', async t => {
 });
 
 test('getMapShareKML with error result', async t => {
-	let getStub = sinon.stub(rp, 'get');
+	const getStub = sinon.stub(rp, 'get');
 	proxyquire('../../../lib/delorme/inreach-service', {
 		'request-promise-native': {
 			get: getStub
@@ -134,7 +134,7 @@ test('getMapShareKML with error result', async t => {
 	const requestPromise = Promise.resolve('');
 	getStub.returns(requestPromise);
 
-	const error = await t.throws(instance.getMapShareKML(mapShareId));
+	const error = await t.throwsAsync(instance.getMapShareKML(mapShareId));
 	t.is(error.message, 'No KML was returned for MapShare: ' + mapShareId, 'should throw correct error message');
 	rp.get.restore();
 });

@@ -1,15 +1,15 @@
 'use strict';
 
-var path = require('path');
-var express = require('express');
-var stylus = require('stylus');
-var nib = require('nib');
-var bodyParser = require('body-parser');
-var methodOverride = require('method-override');
+const path = require('path');
+const express = require('express');
+const stylus = require('stylus');
+const nib = require('nib');
+const bodyParser = require('body-parser');
+const methodOverride = require('method-override');
 
-var routes = require('./routes');
+const routes = require('./routes');
 
-var app = express();
+const app = express();
 
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, '/views'));

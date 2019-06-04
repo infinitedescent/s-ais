@@ -1,7 +1,7 @@
 {
   "name": "sAIS",
-  "version": "1.0.3",
-  "description": "Server-AIS self-reporting service for DeLorme inReach/Explorer devices",
+  "version": "1.0.4",
+  "description": "Server-AIS self-reporting service for Garmin/DeLorme inReach/Explorer devices",
   "license": "GPL-3.0-only",
   "repository": "infinitedescent/s-ais",
   "author": {
@@ -11,10 +11,12 @@
   },
   "bin": "bin/sais",
   "engines": {
-    "node": ">=6"
+    "node": ">=8"
   },
   "scripts": {
     "start": "node server.js",
+    "dev-sais": "nodemon --watch 'lib' --watch 'bin' --exec 'node' bin/sync",
+    "dev-server": "nodemon -e js,pug --watch server.js --watch 'views/**/*.pug' --watch lib --watch public --watch routes ./server.js",
     "test": "xo && nyc ava",
     "snyk-protect": "snyk protect",
     "prepublish": "npm run snyk-protect"
@@ -39,21 +41,22 @@
     "moment": "2.19.3",
     "nib": "1.1.2",
     "pg-promise": "5.9.2",
-    "pug": "2.0.0-rc.2",
-    "request": "2.81.0",
+    "pug": "2.0.3",
+    "request": "2.88.0",
     "request-promise-native": "1.0.3",
-    "sendgrid": "^2.0.0",
+    "sendgrid": "5.2.3",
     "stylus": "0.54.5",
-    "xml2js": "0.4.17",
-    "snyk": "^1.41.1"
+    "xml2js": "0.4.17"
   },
   "devDependencies": {
-    "ava": "0.17.0",
-    "coveralls": "2.11.12",
-    "nyc": "10.0.0",
+    "ava": "2.0.0",
+    "coveralls": "3.0.3",
+    "nodemon": "1.19.1",
+    "nyc": "14.1.1",
     "proxyquire": "1.8.0",
     "sinon": "2.3.5",
-    "xo": "0.17.0"
+    "snyk": "1.171.1",
+    "xo": "0.24.0"
   },
   "xo": {
     "ignore": "public/js/*.js"
