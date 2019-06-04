@@ -34,3 +34,8 @@ To stop Docker run:
 ```
 docker-compose down
 ```
+
+Local Environment Variables
+---------------------------
+
+Use the `.env` file to set any local environment variables.

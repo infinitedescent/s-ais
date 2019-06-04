@@ -3,13 +3,12 @@
 
 const pgp = require('pg-promise')();
 
-const dbConfig = require('./../lib/db/cache-config');
 const CacheService = require('./../lib/db/cache-service');
 
 /**
  * Configure sAIS Postgres Database
  */
-const db = pgp(dbConfig());
+const db = pgp(process.env.DATABASE_URL);
 
 process.stdout.write('sAIS: Database Setup: ');
 new CacheService(db)
