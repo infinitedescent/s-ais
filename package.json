@@ -19,7 +19,8 @@
     "dev-server": "nodemon -r dotenv/config -e js,pug --watch server.js --watch 'views/**/*.pug' --watch lib --watch public --watch routes ./server.js",
     "test": "xo && nyc ava",
     "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "prepublish": "npm run snyk-protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [
     "marinetraffic",
@@ -45,7 +46,8 @@
     "request-promise-native": "1.0.3",
     "sendgrid": "^2.0.0",
     "stylus": "0.54.5",
-    "xml2js": "0.4.17"
+    "xml2js": "0.4.17",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "ava": "2.0.0",
@@ -56,7 +58,6 @@
     "nyc": "14.1.1",
     "proxyquire": "1.8.0",
     "sinon": "2.3.5",
-    "snyk": "1.171.1",
     "xo": "0.24.0"
   },
   "xo": {
