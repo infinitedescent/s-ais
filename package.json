@@ -38,7 +38,7 @@
     "cheerio": "0.22.0",
     "express": "4.16.0",
     "method-override": "2.3.10",
-    "moment": "2.19.3",
+    "moment": "2.29.2",
     "nib": "1.1.2",
     "pug": "2.0.3",
     "request": "2.88.0",
